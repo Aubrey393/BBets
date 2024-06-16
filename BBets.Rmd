@@ -91,7 +91,20 @@ The amount of money DR. J has to pay would be $4.50.
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 
+```{r}
+bank= vector('numeric')
+for (i in 1:100) { 
+ bank[i] = BrLw(28, 2, 637)
+}
+print(mean(bank))
+hist(bank)
+lci=mean(bank)-sqrt(var(bank))*1.96
+uci=mean(bank)+sqrt(var(bank))*1.96
+print(lci)
+print(uci)
+```
 
+In a 28 people class then the 2:1 bet is about fair.
 
 
 
@@ -100,4 +113,6 @@ The amount of money DR. J has to pay would be $4.50.
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
+If professor is consistently gaining and loosing money, he should change his payout to $4:50 to balance to the and loss of the money as shown above, in order to avoid too much loss. In order to keep consistent with winnings and loosings a class size of 28 students should work.
 
