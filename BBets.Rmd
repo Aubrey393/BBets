@@ -61,7 +61,7 @@ print(uci)
 
 average profit = $280 
 
-Assuming we did the bet 40 times the fair odds would be good becuase of the increse in money DR. J would reccive.
+Assuming we did the bet 40 times the fair odds would be good becuase of the increse in money DR. J would receive.
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
@@ -69,7 +69,7 @@ Assuming we did the bet 40 times the fair odds would be good becuase of the incr
 ```{r}
 bank= vector('numeric')
 for (i in 1:100) { 
- bank[i] = BrLw(35, 4.5, 637)
+ bank[i] = BrLw(35, 3.3, 637)
 }
 print(mean(bank))
 hist(bank)
@@ -79,7 +79,7 @@ print(lci)
 print(uci)
 ```
 
-The amount of money DR. J has to pay would be $4.50.
+The amount of money DR. J has to pay would be $3.30.
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
@@ -94,7 +94,7 @@ The amount of money DR. J has to pay would be $4.50.
 ```{r}
 bank= vector('numeric')
 for (i in 1:100) { 
- bank[i] = BrLw(28, 2, 637)
+ bank[i] = BrLw(30, 2, 637)
 }
 print(mean(bank))
 hist(bank)
@@ -104,7 +104,7 @@ print(lci)
 print(uci)
 ```
 
-In a 28 people class then the 2:1 bet is about fair.
+In a 30 people class then the 2:1 bet is about fair.
 
 
 
@@ -114,5 +114,5 @@ In a 28 people class then the 2:1 bet is about fair.
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
-If professor is consistently gaining and loosing money, he should change his payout to $4:50 to balance to the and loss of the money as shown above, in order to avoid too much loss. In order to keep consistent with winnings and loosings a class size of 28 students should work.
+If professor is consistently gaining and loosing money, he should change his payout to $3:30 to balance to the and loss of the money as shown above, in order to avoid too much loss. In order to keep consistent with winnings and loosings a class size of 30 students should work.
 
